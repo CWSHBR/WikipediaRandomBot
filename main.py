@@ -3,10 +3,11 @@ from random import randint
 import os
 from telebot import types
 from keyboa import Keyboa
+import config
 
 
 wikipedia.set_lang("ru")
-bot = telebot.TeleBot("5526826010:AAHHa4FraTMsGXBaoCVXgDSI2lJwClTIsYc")
+bot = telebot.TeleBot(config.bot_key)
 
 cwd, file = os.path.split(__file__)
 
