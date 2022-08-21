@@ -17,9 +17,9 @@ with open(wordDict) as f:
     lines = f.readlines()
 
 @bot.message_handler(commands=['start'])
-def start(message):
+def begin(message):
     bot.send_message(message.chat.id,
-                     'b>Привіт, це чат бот вікіпедії, щоб дізнатися інформацію про цього бота натисни на "/help",'
+                     '<b>Привіт, це чат бот вікіпедії, щоб дізнатися інформацію про цього бота натисни на "/help",'
                      ' щоб дізнатися якусь статтю натисни на "/page", щоб звязатися з розробником натисни "/info"</b>', parse_mode='html')
 
 
